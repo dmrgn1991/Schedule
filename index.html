@@ -116,6 +116,25 @@
             height: fit-content;
 
         }
+        #caption {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+
+        }
+        #caption a{
+            text-decoration: none;
+            color: white;
+            margin: 0 .5rem;
+            padding: .5rem;
+            text-align: center;
+            
+        }
+        #caption a:hover{
+            color:#279AF1;
+            background: #eaeaea
+        }
         #left_col{
             grid-column: 1;
             grid-row: 1;
@@ -132,6 +151,7 @@
 
         table {
             width: 100%;
+            caption-side: bottom;
         }
 
         td,
@@ -345,6 +365,10 @@
                     <td class="sm_tab"><p><a href="#"> Java </a></p> 11am <p><a href="#"> Sys </a></p> 1:30pm </td>
                 </tr>
             </table>
+            <div id="caption"> <a href="#" title="Developmental Psych"> Psych </a>
+                <a href="#" title="Art History"> History</a>
+                <a href="#" title="Environmental"> Enviro </a>
+            </div>
         </div>
         <div id="left_col">
             
