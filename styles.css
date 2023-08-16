@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+header {
+    border-bottom: solid 5px white;
+    display: grid;
+    grid: auto/ 9fr 1fr;
+    width: 100%;
+}
+
+#right_header {
+    grid-column-start: 2;
+    height: 100%;
+    position: relative;
+    width: 500px;
+}
+
+h1 {
+    font-family: 'Poller One';
+    font-weight: lighter;
+    width: fit-content;
+}
+
+#title {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 1rem;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#logo {
+    background: white;
+    color: black;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-family: "Expletus Sans";
+    font-size: 1.8rem;
+    margin-left: .2em;
+    text-align: center;
+}
+
+#left_bar {
+    margin-top: 3em;
+}
+
+#left_bar,
+.links a {
+    font-family: arial;
+    min-width: 200px;
+    text-decoration: none;
+}
+
+.links a {
+    display: block;
+    padding: 5px;
+}
+
+li:not(.title_li) {
+    display: none;
+}
+
+.links a:hover {
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+    background: #222;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+#left_bar li {
+    border: 1px solid;
+    list-style-type: none;
+}
+
+.title_li {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    font-variant: small-caps;
+    padding: 5px;
+}
+
+#calendar {
+    display: none;
+
+}
+
+#calendar,
+td,
+th,
+#mini-calendar {
+    border-collapse: collapse;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mini-calendar {
+    width: 100%
+}
+
+td {
+    font-size: .9em;
+    text-align: center;
+}
+
+td a {
+    display: block;
+    height: 100%;
+    pointer-events: all;
+    text-decoration: none;
+    width: 100%;
+}
+
+td p {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: .5em auto;
+}
+
+td:not(.class):before {
+    content: 'No Class';
+
+}
+
+td:not(.class) {
+    color: #222;
+}
+
+td:hover {
+    -moz-box-shadow: inset 0px 0px 0px 2px #fff;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+    background: #222;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+td:not(.class):hover {
+    color: #111;
+}
+
+
+th {
+    color: black;
+    background: white;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.force_show {
+    display: list-item !important;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.animated_cursor {
+    animation: blink .8s steps(5, start) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.typing {
+    animation: typing 3.5s steps(40, end),
+        cursor .75s step-end infinite;
+}
+
+#typed {
+    display: none;
+}
+
+@media only screen and (min-width:1000px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows: auto;
+        position: relative;
+    }
+
+    #center {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #calendar {
+        display: inline-block;
+
+    }
+
+    td,
+    th {
+        padding: 5px;
+        width: 20%;
+    }
+
+    td {
+        padding: 1em .5em;
+        height: 8em;
+    }
+
+    td p {
+        margin: 1em auto;
+    }
+
+    #mini-calendar {
+        display: none;
+    }
+
+    #center {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin-top: 0;
+    }
+
+    #left_bar {
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-row-start: 1;
+        left: 0;
+        margin-top: 0;
+        max-width: 200px;
+        position: absolute;
+        top: 0;
+    }
+
+    li:not(.title_li) {
+        display: list-item;
+    }
+
+    #left_bar .title_li {
+        cursor: default;
+        border: 1px solid white;
+    }
+
+    #type_box {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    #typed {
+        border-right: .15em solid white;
+        display: inline-block;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: .15em;
+        margin: 0 auto;
+        overflow: hidden;
+        vertical-align: bottom;
+        white-space: nowrap;
+
+    }
+
+}

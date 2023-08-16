@@ -5,480 +5,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter 2023</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        
-        @media only screen and (min-width: 900px) {
-            .sm_tab {
-            display:none;
-        }
-        header{
-            display: grid;
-        }
-        #main_grid{
-                display: grid;
-            }
-        #clock, #date {
-            text-align: right;
-        }
-        }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #d4d4d4;
-        }
-
-        #main_grid {
-            grid-template-columns: 2fr 6fr 2fr;
-            margin-top: 4em;
-        }
-
-        header {
-            text-align: center;
-            grid-template-rows: auto auto auto;
-            grid-template-columns: 1fr 3fr 1fr;
-            font-family: 'Poiret One';
-            font-size: 1.2em;
-            background-color: #232b2b;
-            color: #eaeaea;
-            letter-spacing: .3em;
-        }
-
-        #bar {
-            background: #279AF1;
-            height: 1.5em;
-        }
-
-        #links{
-            background: #d4d4d4;
-            width: 80%;
-            margin: 2em;
-            border-radius: 12px;
-            background-color: #232b2b;
-            padding-top: .5em;
-            padding-bottom: .5em;
-            text-align: center;
-
-        }
-
-        #links h4, #timetable h3 {
-            color: white;
-            font-family: 'Poiret One';
-            text-align: center;
-        }
-
-        #links ul {
-            border-radius: 12px;
-            border: 2px solid #232b2b
-        }
-
-        #links li {
-            font-size: .9em;
-            list-style: none;
-            padding: .3em;
-            background: #d4d4d4;
-            text-align: left;
-            border-bottom: 1px solid #232b2b;
-        }
-        #feed {
-            padding: .5em;
-            border: 1px solid #232b2b;
-            border-radius: 12px;
-            background:#232b2b;
-            width:fit-content;
-            margin-top: 2em;
-        }
-
-
-        .title_li {
-            font-weight: bold;
-            text-align: center;
-
-        }
-
-        #contacts .contacts:hover, #links .links:hover {
-            background: white;
-        }
-
-        #timetable {
-            background: #232b2b;
-            width: 80%;
-            display: block;
-            margin:  2em auto;
-            border-radius: 12px;
-            grid-column: 2;
-            height: fit-content;
-
-        }
-        #caption {
-            display: flex;
-            width: 80%;
-            margin: auto;
-            justify-content: center;
-
-        }
-        #caption a{
-            text-decoration: none;
-            color: white;
-            margin: 0 .5rem;
-            padding: .5rem;
-            text-align: center;
-            
-        }
-        #caption a:hover{
-            color:#279AF1;
-            background: #eaeaea
-        }
-        #left_col{
-            grid-column: 1;
-            grid-row: 1;
-        }
-        #contacts a, #links a {
-            text-decoration: none;
-            color: black;
-            display: block;
-        }
-
-        #contacts a:hover, #links a:hover{
-            color: #279AF1;
-        }
-
-        table {
-            width: 100%;
-            caption-side: bottom;
-        }
-
-        td,
-        th {
-            border: 1px solid #232b2b;
-            border-collapse: collapse;
-            border-radius: 12px;
-            width: 20%;
-            text-align: center;
-            padding: 1em .5em;
-            
-
-        }
-
-        th {
-            font-family: 'Poiret One';
-            background: #232b2b;
-            color: white;
-            letter-spacing: .2em;
-        }
-
-        td {
-            padding: 2em 0em;
-            background: #d4d4d4;
-            font-size: .9em;
-        }
-
-        td p {
-            font-weight: bold;
-
-        }
-
-        td a {
-            color: black;
-        }
-
-        td a:hover {
-            color: #279AF1;
-        }
-
-        td:hover {
-            background-color: white;
-            border: 1px solid #279AF1;
-
-        }
-
-        td:not(.class):hover {
-            background: white;
-            border: 1px solid #279AF1;
-
-        }
-
-        td:not(.class, .sm_tab):before {
-            content: 'No Class';
-            color: #d4d4d4;
-        }
-        #clock{
-            grid-row: 3;
-            grid-column:3;
-            padding: .3em 0;
-
-            
-        }
-        #date{
-            grid-row: 2;
-            grid-column:3;
-            height: fit-content;
-            margin-top: 2em;
-            
-        }
-        #HCB_comment_box {
-            margin: 0 auto;
-            width: 60%;
-        }
-        #title {
-            grid-area: 1 / 2 / span 2 / span 1;
-        }
-        @media only screen and (max-width: 900px) {
-            .class, td {
-            display:none;
-            }
-            .sm_tab {
-                display: table-cell;
-                
-            }
-            table{
-                background:#232b2b;
-                
-            }
-            header{
-                display:block;
-            }
-            #main_grid{
-                display: inline;
-                
-            }
-            #contacts, #links {
-                margin: 1em auto;
-                display:block;
-                max-width: 40%;
-                min-width: fit-content;
-            }
-            #timetable{
-                width: fit-content;
-            }
-            #feed {
-                display: block;
-                margin: auto;
-            }
-            
-        }
-    </style>
-
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poller+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus+Sans">
+    <script src="script.js"></script>
 </head>
 
-<body onload="startTime()">
+<body>
     <header>
-        <div></div>
-        <div id="title">
-            <h1>Software Support - 548</h1>
-            <h2> Winter Semester 2023</h2>
-        </div>
-        <div id="date">
-        </div>
-        <div id="clock">
-        </div>
+        <h1><span id=logo>548</span> <span id="title">SOFTWARE <div>SUPPORT</div> </span> </h1>
+        
+        <div id="right_header"><div id="type_box"><span id="typed"></span></div></div>
+        
     </header>
-    <div id="bar">
-    </div>
-    <div id="main_grid">
-        <div id="timetable">
-            <h3>SCHEDULE </h3>
-            <table>
+
+    <main>
+        <div id="center">
+            <h4 class="subtitle">FALL 2023 SCHEDULE</h4>
+            <table id="calendar">
                 <tr>
-                    <th>MON</th>
-                    <th>TUE</th>
-                    <th>WED</th>
-                    <th>THU</th>
-                    <th>FRI</th>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
                 </tr>
-                <tr>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/84481" title="Math">Discrete Math</a></p>
-                        9:00am-10:30am
-                    </td>
+                <tr> <!--9-12-->
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/83726" title="Intro Sys Analysis and Design">Sys Analysis</a></p>
-                        10:30am-12:00pm
-                    </td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/83716" title="Programming in Java">Java</a></p>
-                        11:00am-1:00pm
+                        <a href="">
+                            <p>.Net</p>
+                            9:00am -11:00am
+                        </a>
+
                     </td>
                 </tr>
-                <tr>
-                    <td></td>
+                <tr> <!--12-3-->
                     <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/83716" title="Programming in Java">Java</a></p>
-                        12:00pm-3:00pm</td>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/83746" title="Computer Training & Tech Wrtng">Technical Writing</a></p>
-                        2:00pm-5:00pm
-                    </td>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/86737" title="Client-side Web Programming">Client-side Web</a></p>
-                        12:00pm-1:30pm</td>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/83726" title="Intro Sys Analysis and Design">Sys Analysis</a></p>
-                        1:30pm-3:00pm
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/86737" title="Client-side Web Programming">Client-side Web</a></p>
-                        3:30pm-5:00pm
+                        <a href="">
+                            <p>Object Oriented Systems</p>1:00pm-2:30pm
+                        </a>
                     </td>
                     <td></td>
+                    <td></td>
                     <td class="class">
-                        <p><a href="https://mycanvas.mohawkcollege.ca/courses/84481" title="Math">Discrete Math</a></p>
-                        3:00pm-4:30pm
+                        <a href="">
+                            <p>Object Oriented Systems</p> 12:00pm-1:30pm
+                        </a>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>
+                    <td></td>
+                    <td class="class">
+                        <a href="">
+                            <p>Server Side Programming</p> 3:00pm-5:00pm
+                        </a>
                     </td>
                     <td class="class">
-                        <p>Elective</p>
-                        6:00pm-8:00pm
+                        <a href="">
+                            <p>.Net</p>3:00pm-5:00pm
+                        </a>
                     </td>
-                    <td>                        
+                    <td class="class">
+                        <a href="">
+                            <p>Server Side Programming</p>
+                            2:00pm-4:00pm
+                        </a>
                     </td>
-                    <td></td>
+
                 </tr>
                 <tr>
-                    <td class="sm_tab"><p><a href="https://mycanvas.mohawkcollege.ca/courses/84481">Math</a></p> 9am <p><a href="https://mycanvas.mohawkcollege.ca/courses/83726">Sys</a></p> 10:30am</td>
-                    <td class="sm_tab"><p><a href="https://mycanvas.mohawkcollege.ca/courses/83716">Java</a></p> 12pm <p><a href="#">Client</a></p>3:30pm</td>
-                    <td class="sm_tab"><p><a href="https://mycanvas.mohawkcollege.ca/courses/83746">Tech</a></p> 2pm <p>Elect</p> 6pm </td>
-                    <td class="sm_tab"><p><a href="https://mycanvas.mohawkcollege.ca/courses/86737"> Client </a></p> 12pm <p><a href="https://mycanvas.mohawkcollege.ca/courses/84481"> Math </a></p> 3pm </td>
-                    <td class="sm_tab"><p><a href="https://mycanvas.mohawkcollege.ca/courses/83716"> Java </a></p> 11am <p><a href="https://mycanvas.mohawkcollege.ca/courses/83726"> Sys </a></p> 1:30pm </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="class"><a href="">
+                            <p>Database Theory</p>4:30pm-6:00pm
+                        </a></td>
+                </tr>
+                <tr>
+                    <td class="class"><a href="">
+                            <p>Database Theory</p>7:00pm-9:30pm
+                        </a></td>
+                    <td></td>
+                    <td class="class"><a href="">
+                            <p>Elective</p> 6:00pm-8:00pm
+                        </a></td>
+                    <td class="class"><a href="">
+                            <p>Software Quality & Testing</p>6:00pm-9:00pm
+                        </a></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <table id="mini-calendar">
+                <tr>
+                    <th>M</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                </tr>
+                <tr>
+                    <td class="class"><p>Object</p> 1-2:30 <p>Database</p> 7-9:30</td>
+                    
+                    <td class="class"><p>Server Side</p>3-5</p><p>Elective</p>6-8</td>
+                    <td class="class"><p>Object</p>12-1:30 <p>.NET</p>3-5 <p>Quality</p>6-9</p></td>
+                    <td class="class"><p>.NET</p>9-11 <p>Server</p>2-4 <p>Database</p> 4:30-6</td>
                 </tr>
             </table>
-            <div id="caption"> <a href="https://mycanvas.mohawkcollege.ca/courses/83785" title="Developmental Psych"> Psych </a>
-                <a href="#" title="Art History"> History</a>
-                <a href="https://mycanvas.mohawkcollege.ca/courses/83899" title="Environmental"> Enviro </a>
-            </div>
-        </div>
-        <div id="left_col">
             
-            <div id="links">
-
-                <h4>LINKS</h4>
+            <div id="left_bar">
+            
+                <h4 class="subtitle">LINKS</h4>
                 <ul>
-                    <li class="title_li">Professors</li>
-                    <li class="links"><a href="mailto:peter.wong2@mohawkcollege.ca">Peter Wong</a></li>
-                    <li class="links"><a href="mailto:frosina.stojanovska-pocuca@mohawkcollege.ca">Frosina Stojanovska-Pocuca</a></li>
-                    <li class="links"><a href="mailto:nimesh.prabhakar@mohawkcollege.ca">Nimesh Prabhakar</a></li>
-                    <li class="links"><a href="mailto:karen.laurin@mohawkcollege.ca">Karen Laurin</a></li>
-                    <li class="links"><a href="mailto:joel.st-pierre@mohawkcollege.ca">Joel St. Pierre</a></li>
-                    <li class="links"> <a href="mailto:shaun.iles@mohawkcollege.ca"> Shaun Iles</a></li>
-                    <li>&nbsp;</li>
-                    <li class="title_li">Admin</li>
-                    <li class="links"><a href="mailto:sharon.scollard@mohawkcollege.ca">Sharon Scollard</a></li>
-                    <li class="links"><a href="mailto:nichole.miller@mohawkcollege.ca">Nichole Miller</a></li>
-                    <li class="links"><a href="mailto:elizabeth.martin6@mohawkcollege.ca">Elizabeth Martin</a></li>
-                    <li>&nbsp;</li>
-                    <li class="title_li">Mohawk</li>
-                    <li class="links"><a href="https://www.mohawkcollege.ca/academic-and-important-dates" title="Important Dates" target="_blank">Important Dates</a></li>
-                    <li class="links"><a href="https://mymohawk.mohawkcollege.ca/" title="My Mohawk" target="_blank">My Mohawk</a></li>
-                    <li class="links"><a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technician-software-support-548-558" title="Software Support" target="_blank">Program Page</a></li>
-                    <li class="links"><a href="https://library.mohawkcollege.ca/home" title="Library" target="_blank">Library</a></li>
-                    <li>&nbsp;</li>
-                    <li class="title_li">Tutorials</li>
-                    <li class="links"><a href="https://www.w3schools.com/js/default.asp" target="_blank">W3 JS</a></li>
-                    <li class="links"><a href="https://www.w3schools.com/jquery/default.asp" target="_blank">W3 jQuery</a></li>
-                    <li class="links"><a href="https://www.w3schools.com/java/default.asp" target="_blank">W3 Java</a></li>
-                    <li class="links"><a href="https://codingbat.com/java" target="_blank">Codingbat Java</a></li>
-                </ul>
+                    <li id="prof_header" class="title_li">Professors</li>
+                    <li class="links prof_link"><a href="andrzej.parkitny@mohawkcollege.ca">Andrzej Parkitny</a></li>
+                    <li class="links prof_link"><a href="peter.basl@mohawkcollege.ca">Peter Basl</a></li>
+                    <li class="links prof_link"><a href="pawanjit.multani@mohawkcollege.ca">Pawanjit Multani</a></li>
+                    <li class="links prof_link"><a href="ruth.vanhooydonk@mohawkcollege.ca">Ruth vanHooydonk</a></li>
+                    <li class="links prof_link"><a href="colin.kent-shepherd1@mohawkcollege.ca">Colin T. Kent-Sheperd</a></li>
+                    <li class="links prof_link"> <a href="mailto:shaun.iles@mohawkcollege.ca"> Shaun Iles</a></li>
+    
+                    <li id="admin_header" class="title_li">Admin</li>
+                    <li class="links admin_link"><a href="mailto:sharon.scollard@mohawkcollege.ca">Sharon Scollard</a></li>
+                    <li class="links admin_link"><a href="mailto:nichole.miller@mohawkcollege.ca">Nichole Miller</a></li>
+                    <li class="links admin_link"><a href="mailto:elizabeth.martin6@mohawkcollege.ca">Elizabeth Martin</a></li>
+    
+                    <li id="mohawk_header" class="title_li">Mohawk</li>
+                    <li class="links mohawk_link"><a href="https://www.mohawkcollege.ca/academic-and-important-dates"
+                            title="Important Dates" target="_blank">Important Dates</a></li>
+                    <li class="links mohawk_link"><a href="https://mymohawk.mohawkcollege.ca/" title="My Mohawk" target="_blank">My
+                            Mohawk</a></li>
+                    <li class="links mohawk_link"><a
+                            href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technician-software-support-548-558"
+                            title="Software Support" target="_blank">Program Page</a></li>
+                    <li class="links mohawk_link"><a href="https://library.mohawkcollege.ca/home" title="Library"
+                            target="_blank">Library</a></li>
+    
+                    <li id="tutorial_header" class="title_li">Tutorials</li>
+                    <li class="links tutorial_link"><a href="https://www.w3schools.com/js/default.asp" target="_blank">W3 JS</a></li>
+                    <li class="links tutorial_link"><a href="https://www.w3schools.com/jquery/default.asp" target="_blank">W3 jQuery</a>
+                    </li>
+                    <li class="links tutorial_link"><a href="https://www.w3schools.com/cs/index.php" target="_blank">W3 C#</a></li>
+                    <li class="links tutorial_link"><a href="https://codingbat.com/java" target="_blank">Codingbat Java</a></li>
+                
             </div>
         </div>
-        <div id="right_col">
-            <div id="feed">
-<!-- start sw-rss-feed code --> 
-<script> 
-    <!-- 
-    rssfeed_url = new Array(); 
-    rssfeed_url[0]="https://www.mohawknewsdesk.ca/tagfeed/en-us/tags/News__Now";  
-    rssfeed_frame_width="230"; 
-    rssfeed_frame_height="480"; 
-    rssfeed_scroll="on"; 
-    rssfeed_scroll_step="6"; 
-    rssfeed_scroll_bar="off"; 
-    rssfeed_target="_blank"; 
-    rssfeed_font_size="12"; 
-    rssfeed_font_face="arial, sans-serif"; 
-    rssfeed_border="off"; 
-    rssfeed_css_url=""; 
-    rssfeed_title="on"; 
-    rssfeed_title_name=""; 
-    rssfeed_title_bgcolor="#232b2b"; 
-    rssfeed_title_color="#fff"; 
-    rssfeed_title_bgimage=""; 
-    rssfeed_footer="off"; 
-    rssfeed_footer_name="rss feed"; 
-    rssfeed_footer_bgcolor="#fff"; 
-    rssfeed_footer_color="#333"; 
-    rssfeed_footer_bgimage=""; 
-    rssfeed_item_title_length="50"; 
-    rssfeed_item_title_color="#eaeaea"; 
-    rssfeed_item_bgcolor="#232b2b"; 
-    rssfeed_item_bgimage=""; 
-    rssfeed_item_border_bottom="off"; 
-    rssfeed_item_source_icon="on"; 
-    rssfeed_item_date="off"; 
-    rssfeed_item_description="on"; 
-    rssfeed_item_description_length="120"; 
-    rssfeed_item_description_color="#eaeaea"; 
-    rssfeed_item_description_link_color="#232b2b"; 
-    rssfeed_item_description_tag="off"; 
-    rssfeed_no_items="0"; 
-    rssfeed_cache = "78647aee95be39ee8f7016f9444d3c9a"; 
-    //--> 
-    </script> 
-    <script src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
-    <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-    <div style="color:#ccc;font-size:10px; text-align:right; width:230px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
-    <!-- end sw-rss-feed code -->
-    </div> 
-    
-        </div>
-        
-    </div>
-<!-- begin wwww.htmlcommentbox.com -->
-<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
-<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24aiOixj5QcALbZGy5sqnlb%2F"+"&opts=16798&num=10&ts=1671408658437");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
-<!-- end www.htmlcommentbox.com -->
-        <script>
-            function startTime() {
-                const today = new Date();
-                const datetoday = new Date()
-                let h = today.getHours();
-                let m = today.getMinutes();
-                let s = today.getSeconds();
-                m = checkTime(m);
-                s = checkTime(s);
-                document.getElementById('clock').innerHTML = h + ":" + m ;
-                document.getElementById('date').innerHTML = datetoday.toDateString();
-                setTimeout(startTime, 1000);
-            }
 
-            function checkTime(i) {
-                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
-                return i;
-            }
-        </script>
+        
+    </main>
+    
+    <footer></footer>
+
 </body>
 
 </html>
